@@ -1,0 +1,14 @@
+.btn-lg {
+    background-color: fuchsia;
+    color: black;
+    border-color: black;
+    width: 10%;
+
+}
+
+.btn-lg:active:focus:hover {
+    background-color: fuchsia;
+}
+.score {
+    color: fuchsia;
+}
