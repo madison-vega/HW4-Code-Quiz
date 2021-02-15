@@ -2,7 +2,8 @@
     background-color: fuchsia;
     color: black;
     border-color: black;
-    width: 10%;
+    width: 50%
+    
 
 }
 
@@ -11,4 +12,20 @@
 }
 .score {
     color: fuchsia;
+    border: solid;
 }
+
+.container {
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 10%;
+    width: 40%;
+    height: 40%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+
+
+
