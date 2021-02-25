@@ -12,6 +12,7 @@ Once the live link is clicked on it will take you to the main page of the quiz t
 ## Links
 
 [Link to live site](https://madison-vega.github.io/HW4-Code-Quiz/index.html)
+[Link to repository](https://github.com/madison-vega/HW4-Code-Quiz)
 
 
 ## License
