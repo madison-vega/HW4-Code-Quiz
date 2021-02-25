@@ -24,6 +24,7 @@ var scoreEl = document.querySelector('.scores');
 var quizEl = document.querySelector('.content');
 var answerShow = document.createElement('ul');
 var questionEl = document.querySelector('.quizTitle');
+var choiceEl = document.getElementById('quizChoice');
 var correct = 'Correct!';
 var wrong = 'Wrong!';
 var seconds = 75;
@@ -103,10 +104,22 @@ function startGame() {
 // function to populate question content in the HTML
 function showQuestions() {
     for(var i=0; i < questionItems.length; i++) 
+   
+    for (var i = 0; i < questionItems[0].answers.length; i++) {
+        var createBtn = document.createElement('button');
+        createBtn.textContent = questionItems[0].answers[i];
+        choiceEl.appendChild(createBtn);
+        
+        
+    }
+    
 
     questionEl.innerHTML =  questionItems[0].question;
     
 
-    quizEl.innerHTML = '<button>' + questionItems[0].answers + '</button>';
+ 
+    
+    
+    
 
 }
