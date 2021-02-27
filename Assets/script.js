@@ -36,7 +36,7 @@ var questionItems = [
     {
         question: 'A ______ operator is used to determine the difference between values or variables.',
         answers: ['Logical', 'Conditional', 'Comparison', 'Telephone'],
-        correctIdx: 2,
+        correctIdx: 'Comparison',
 
     },
     {
@@ -108,18 +108,26 @@ function showQuestions() {
     for (var i = 0; i < questionItems[0].answers.length; i++) {
         var createBtn = document.createElement('button');
         createBtn.textContent = questionItems[0].answers[i];
+        createBtn.classList.add('answerBtn');
         choiceEl.appendChild(createBtn);
         
         
     }
+    $('.answerBtn').click(function(e){
+        console.log(e.target.innerText);
+        console.log('click');
+    }) 
     
 
     questionEl.innerHTML =  questionItems[0].question;
-    
 
- 
-    
-    
-    
 
-}
+};
+
+// if userinput = correctidx then add 1 point text "correct"
+// if userinput does not = corrctidx then subtract 5 seconds text "incorrect"
+// move on to next question 
+// if text content of button is equal to correctidx then console.log correct
+// jquery to add class to button, to identify buttons target class add click event, then run conditionals for the answer check
+// e.target.text = 
+// questionItems++
